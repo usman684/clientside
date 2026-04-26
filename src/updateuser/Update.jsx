@@ -36,7 +36,7 @@ const UpdateUser = () => {
   const submitFormm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`${API}/update/user/${id}`, user)
+      .put(`${API}/update/user/${id}`)
       .then((response) => {
         toast.success(response.data.message, { position: "top-center" });
         navigate("/");
