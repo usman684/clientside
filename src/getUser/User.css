@@ -1,20 +1,18 @@
 .userTable {
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+  width: 95%;
+  max-width: 1200px;
   margin: 50px auto;
   background-color: white;
-  padding: 50px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
-  overflow-x: auto; /* IMPORTANT */
+  overflow-x: auto;
 }
 
 .userTable table {
   width: 100%;
-  margin-top: 30px;
-  display: block;
-  overflow-x: auto;
+  border-collapse: collapse;
+  min-width: 600px; /* important for responsiveness */
 }
 
 .userTable table thead th {
@@ -40,16 +38,12 @@
 /* 📱 MOBILE */
 @media (max-width: 768px) {
   .userTable {
-    width: 95%;
-    padding: 20px;
+    width: 98%;
+    padding: 15px;
   }
 
   .userTable table {
-    font-size: 12px;
-  }
-
-  .actionButtons button {
-    margin: 5px;
+    min-width: 700px; /* scroll allow */
   }
 }
 
