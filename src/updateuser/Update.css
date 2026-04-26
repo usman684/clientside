@@ -1,4 +1,4 @@
-.addUser{
+.addUser {
     background-color: white;
     width: 25%;
     margin: 50px auto;
@@ -13,20 +13,20 @@
     flex-direction: column;
 }
 
-.addUserForm .inputGroup label{
+.addUserForm .inputGroup label {
     margin-top: 5px;
 }
 
-.addUserForm .inputGroup input{
+.addUserForm .inputGroup input {
     margin-bottom: 5px;
     padding: 10px;
 }
 
-.addUserForm .inputGroup button{
+.addUserForm .inputGroup button {
     margin-top: 8px;
 }
 
-.addUser h3{
+.addUser h3 {
     margin-top: 30px;
     text-align: center;
     font-weight: bold;
@@ -35,3 +35,18 @@
     text-transform: uppercase;
 }
 
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+    .addUser {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+}
+
+/* 💻 SMALL LAPTOP */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .addUser {
+        width: 50%;
+    }
+}
