@@ -1,3 +1,3 @@
-const API = "https://crudserver-production.up.railway.app";
+const API = "https://crudserver-production.up.railway.app/api";
 
 export default API;
